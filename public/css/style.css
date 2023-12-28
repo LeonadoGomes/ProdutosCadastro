@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS menu */
+#navbar {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    align-items: center;
+
+}
+
+#navbar img {
+    max-width: 58px;
+
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* CSS para centralizar o título */
+.title1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table-title {
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: none;
+    overflow-y: auto;
+}
+
+
+form {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+/*CSS tabela*/
+.table-container {
+    margin: 20px;
+
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.custom-table th,
+.custom-table td {
+    border: 3px solid #070707;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.custom-table td {
+    font-size: 20px;
+}
+
+/* CSS icon */
+.icon-cell {
+    font-size: 29px;
+
+}
+
+
+/* CSS footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
