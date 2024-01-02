@@ -4,11 +4,19 @@
 
 @section('content')
 
+
+
     <body>
         <div class="form-container">
             <h1 class="title1">Cadastre o Produto</h1>
-            <form action="/products" method="POST">
+            <form action="/products" method="POST" enctype="multipart/form-data">
                 @csrf
+                <div class="form-group">
+                    <label for="image" class="title1">Imagem dos Produtos:</label>
+                    <input type="file" class="form-control-file" id="image" name="image" onchange="previewImage()">
+                    <img id="preview" class="preview-image" src="#" alt="Preview da Imagem">
+                </div>
+
                 <div class="form-group">
                     <label for="name" class="title1">Nome:</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Nome do Produto">

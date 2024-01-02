@@ -131,6 +131,15 @@ form {
 }
 
 
+/* CSS iamge de cadastro */
+.preview-image {
+    max-width: 20%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
 /* CSS footer */
 footer {
     background-color: #333;

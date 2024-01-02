@@ -13,6 +13,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Nome</th>
+                        <th scope="col">Imagem</th>
                         <th scope="col">Quantidade</th>
                         <th scope="col">Preço</th>
                         <th scope="col">Descrição</th>
@@ -25,6 +26,11 @@
                         <tr>
                             <td>{{ $products->id }}</td>
                             <td> {{ $products->name }}</td>
+                            <td>
+                                <img src="/img/produtos/{{ $products->image }}" alt=""
+                                    style="max-width: 100px; max-height: 100px;">
+                            </td>
+
                             <td>{{ $products->qtd }}</td>
                             <td>R$ {{ number_format($products->preco, 2, ',', '.') }}</td>
                             <td>{{ $products->description }}</td>
