@@ -37,7 +37,7 @@
 
 
     @yield('content')
-    <footer>Registro de Produtos</footer>
+    {{-- <footer>Registro de Produtos</footer> --}}
 
 </body>
 
