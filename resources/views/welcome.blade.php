@@ -32,7 +32,7 @@
                             </td>
 
                             <td>{{ $products->qtd }}</td>
-                            <td>R$ {{ number_format($products->preco, 2, ',', '.') }}</td>
+                            <td>R$ {{ number_format($products->preco, 2, ',', ',') }}</td>
                             <td>{{ $products->description }}</td>
                             <td class="icon-cell">
                                 <form action="/products/{{ $products->id }}" method="POST">

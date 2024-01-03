@@ -20,11 +20,15 @@
                     <input type="number" class="form-control" id="qtd" name="qtd"
                         placeholder="Quantidade do Produto" value="{{ $products->qtd }}">
                 </div>
+
                 <div class="form-group">
-                    <label for="qtd" class="title1">Preço:</label>
-                    <input type="number" class="form-control" id="preco" name="preco" placeholder="Preço Do Produto"
+                    <label for="preco" class="title1">Preço:</label>
+                    <input type="text" class="form-control" id="preco" name="preco" placeholder="Preço do Produto"
+                        pattern="[0-9]+([\.,][0-9]+)?"
+                        title="Use apenas números e, opcionalmente, um ponto ou vírgula para decimais"
                         value="{{ $products->preco }}">
                 </div>
+
                 <div class="form-group">
                     <label for="description" class="title1">Descrição:</label>
                     <input type="text" class="form-control" id="description" name="description"
