@@ -22,6 +22,10 @@
                     <input type="text" class="form-control" id="name" name="name" placeholder="Nome do Produto">
                 </div>
                 <div class="form-group">
+                    <label for="name" class="title1">Nome:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome do Produto">
+                </div>
+                <div class="form-group">
                     <label for="qtd" class="title1">Quantidade:</label>
                     <input type="number" class="form-control" id="qtd" name="qtd"
                         placeholder="Quantidade do Produto">
