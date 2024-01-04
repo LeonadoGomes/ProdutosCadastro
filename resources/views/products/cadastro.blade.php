@@ -16,11 +16,6 @@
                     <input type="file" class="form-control-file" id="image" name="image" onchange="previewImage()">
                     <img id="preview" class="preview-image" src="#" alt="Preview da Imagem">
                 </div>
-
-                <div class="form-group">
-                    <label for="name" class="title1">Nome:</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome do Produto">
-                </div>
                 <div class="form-group">
                     <label for="name" class="title1">Nome:</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Nome do Produto">
