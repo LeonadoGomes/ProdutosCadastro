@@ -11,12 +11,12 @@ body {
     justify-content: space-between;
     background-color: #333;
     align-items: center;
-
+    padding: 10px;
+    /* Adicionado espaço interno ao navbar */
 }
 
 #navbar img {
     max-width: 58px;
-
 }
 
 .navbar-nav {
@@ -37,10 +37,16 @@ body {
     color: #ffcc00;
 }
 
+.nav-link ion-icon {
+    font-size: 1.2em;
+
+}
+
 @media (max-width: 768px) {
     #navbar {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        /* Ajustado para o centro em telas menores */
     }
 
     .nav-item {
@@ -50,13 +56,8 @@ body {
 }
 
 /* CSS para centralizar o título */
-.title1 {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
+.title1,
 .table-title {
-
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -70,7 +71,6 @@ body {
     overflow-y: auto;
 }
 
-
 form {
     max-width: 400px;
     width: 100%;
@@ -80,7 +80,6 @@ form {
 .form-group {
     margin-bottom: 15px;
     font-size: 20px;
-
 }
 
 .btn {
@@ -98,7 +97,6 @@ form {
 /*CSS tabela*/
 .table-container {
     margin: 20px;
-
 }
 
 .custom-table {
@@ -127,18 +125,15 @@ form {
 /* CSS icon */
 .icon-cell {
     font-size: 29px;
-
 }
-
 
 /* CSS iamge de cadastro */
 .preview-image {
-    max-width: 20%;
+    max-width: 100%;
+    /* Ajustado para ocupar 100% da largura do contêiner pai */
     height: auto;
     margin-top: 10px;
 }
-
-
 
 /* CSS footer */
 footer {
@@ -149,4 +144,23 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }

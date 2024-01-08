@@ -11,3 +11,4 @@ Route::get('/', [cadastroDeProdutos::class, 'buscar']);
 Route::delete('/products/{id}', [cadastroDeProdutos::class, 'destroy']);
 Route::get('/products/edit/{id}', [cadastroDeProdutos::class, 'edit']);
 Route::put('/products/update/{id}', [cadastroDeProdutos::class, 'update']);
+Route::get('/cadastroUser', [cadastroDeProdutos::class, 'cadastroUser']);

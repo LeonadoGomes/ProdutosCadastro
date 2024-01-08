@@ -12,6 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+
 </head>
 
 <body>
@@ -23,17 +24,19 @@
 
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/">Inicio</a>
+                <a class="nav-link" href="/">Inicio <ion-icon name="home-outline"></ion-icon></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/products/cadastro">Cadastro</a>
+                <a class="nav-link" href="/products/cadastro">Cadastro <ion-icon
+                        name="duplicate-outline"></ion-icon></a>
             </li>
-
-            {{-- <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li> --}}
+            <li class="nav-item">
+                <a class="nav-link" href="/login/cadastroUser">Cadastra-se <ion-icon
+                        name="person-add-outline"></ion-icon></a>
+            </li>
         </ul>
     </nav>
+
 
 
     @yield('content')

@@ -68,4 +68,10 @@ class cadastroDeProdutos extends Controller
         $products =  Products::findOrfail($request->id)->update($data);
         return redirect('/')->with('msg', 'Produto editado');
     }
+
+    public function cadastroUser()
+    {
+
+        return view('login.cadastroUser');
+    }
 }
