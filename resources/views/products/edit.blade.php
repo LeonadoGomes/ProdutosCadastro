@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Cadastro de Ferramentas')
+@section('title', 'Editar de Ferramentas')
 
 @section('content')
 
@@ -10,6 +10,12 @@
             <form action="/products/update/{{ $products->id }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
+                <div class="form-group">
+                    <label for="image" class="title1">Imagem dos Produtos:</label>
+                    <input type="file" class="form-control-file" id="image" name="image">
+                    <img src="/img/produtos/{{ $products->image }}" alt="Preview da Imagem" class="img-preview">
+                </div>
+
                 <div class="form-group">
                     <label for="name" class="title1">Nome:</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Nome do Produto"
@@ -24,10 +30,10 @@
                 <div class="form-group">
                     <label for="preco" class="title1">Preço:</label>
                     <input type="text" class="form-control" id="preco" name="preco" placeholder="Preço do Produto"
-                        pattern="[0-9]+([\.,][0-9]+)?"
-                        title="Use apenas números e, opcionalmente, um ponto ou vírgula para decimais"
-                        value="{{ $products->preco }}">
+                        pattern="[0-9]+([.,][0-9]+)?"
+                        title="Use apenas números e, opcionalmente, um ponto ou vírgula para decimais"value="{{ $products->preco }}">
                 </div>
+
 
                 <div class="form-group">
                     <label for="description" class="title1">Descrição:</label>

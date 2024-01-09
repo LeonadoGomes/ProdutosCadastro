@@ -52,7 +52,7 @@ class cadastroDeProdutos extends Controller
     public function destroy($id)
     {
         Products::findOrfail($id)->delete();
-        return redirect('/')->with('msg', 'Produto deletado');
+        return redirect('/')->with('success', 'Produto deletado com sucesso!');
     }
 
     public function edit($id)
@@ -65,13 +65,18 @@ class cadastroDeProdutos extends Controller
     {
         $data = $request->all();
 
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            $requestImage = $request->image;
+            $extension = $requestImage->extension();
+
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+            $requestImage->move(public_path('img/produtos'), $imageName);
+
+            $data['image'] = $imageName;
+        }
+
         $products =  Products::findOrfail($request->id)->update($data);
         return redirect('/')->with('msg', 'Produto editado');
-    }
-
-    public function cadastroUser()
-    {
-
-        return view('login.cadastroUser');
     }
 }
