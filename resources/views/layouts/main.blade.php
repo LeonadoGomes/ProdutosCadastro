@@ -40,6 +40,10 @@
                 <a class="nav-link" href="/login/listagemDeUsuario">Usuário Cadastrado <ion-icon
                         name="receipt-outline"></ion-icon></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login/listagemDeUsuario">Usuário Cadastrado <ion-icon
+                        name="receipt-outline"></ion-icon></a>
+            </li>
 
         </ul>
     </nav>
