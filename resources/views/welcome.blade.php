@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Lista de Produtos')
+@section('title', 'Produtos Cadastrado')
 
 @section('content')
 
